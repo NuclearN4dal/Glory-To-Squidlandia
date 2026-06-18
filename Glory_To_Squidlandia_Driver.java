@@ -1,5 +1,5 @@
 
-/*
+/* Nuclear Nadal
  * OOP Game "Glory to Squidlandia"
  */
 
