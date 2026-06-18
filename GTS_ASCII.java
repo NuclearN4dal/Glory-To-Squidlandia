@@ -1,0 +1,322 @@
+public class GTS_ASCII
+{
+  public static void displayTitle(){
+System.out.println("");
+System.out.println(" d888b  db       .d88b.  d8888b. db    db      d888888b  .d88b.       .d8888.  .d88b.  db    db d888888b d8888b. db       .d8b.  d8b   db d8888b. d888888b  .d8b.");  
+System.out.println("88' Y8b 88      .8P  Y8. 88  `8D `8b  d8'      `~~88~~' .8P  Y8.      88'  YP .8P  Y8. 88    88   `88'   88  `8D 88      d8' `8b 888o  88 88  `8D   `88'   d8' `8b ");
+System.out.println("88      88      88    88 88oobY'  `8bd8'          88    88    88      `8bo.   88    88 88    88    88    88   88 88      88ooo88 88V8o 88 88   88    88    88ooo88 ");
+System.out.println("88  ooo 88      88    88 88`8b      88            88    88    88        `Y8b. 88    88 88    88    88    88   88 88      88~~~88 88 V8o88 88   88    88    88~~~88 ");
+System.out.println("88. ~8~ 88booo. `8b  d8' 88 `88.    88            88    `8b  d8'      db   8D `8P  d8' 88b  d88   .88.   88  .8D 88booo. 88   88 88  V888 88  .8D   .88.   88   88 ");
+System.out.println(" Y888P  Y88888P  `Y88P'  88   YD    YP            YP     `Y88P'       `8888Y'  `Y88'Y8 ~Y8888P' Y888888P Y8888D' Y88888P YP   YP VP   V8P Y8888D' Y888888P YP   YP ");
+System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+System.out.println("                                                         AUTHOR: MUSASHI COX    INSPIRED BY PAPERS PLEASE");
+System.out.println("///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+System.out.println("");
+System.out.println("  .d .o.     .dP-Y8 888888    db    88**Yb 888888" );
+System.out.println(".d88 `-'     `Ybo.|   88     dPYb   88__dP   88   ");
+System.out.println("  88 .o.     o.`Y8b   88    dP__Yb  88-Yb    88   ");
+System.out.println("  88 `-'     8bodP'   88   dP----Yb 88  Yb   88   ");
+System.out.println("");
+System.out.println("oP-Yb. .o.      dP-Yb  88   88 88 888888 ");
+System.out.println("*' dP' `-'     dP   Yb 88   88 88   88   ");
+System.out.println("  dP'  .o.     Yb b dP Y8   8P 88   88   ");
+System.out.println(".d8888 `-'      `*YoYo `YbodP' 88   88   ");
+                     
+
+    } 
+  
+  public static void displayIntro(){
+    System.out.println("___________________________________________________________________________________");
+    System.out.println("|                                                                                 |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|                        ***  WELCOME TO SQUIDLANDIA  ***                         |");
+    System.out.println("|                        -------------------------------                          |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|      Commission Briefing:                                                       |");
+    System.out.println("|      The motherland is always open to accept new Squids under her allegiance.   |");
+    System.out.println("|      It is your 'voluntary' duty to determine which candidates have             |");
+    System.out.println("|      appropriate visas. You must becareful as Squidlandia has many enemies      |");
+    System.out.println("|      jealous of her prosperity and power. You have a flawless credit score      |");
+    System.out.println("|      but letting in unsuitable candidates will tarnish your credit.             |");
+    System.out.println("|      If your credit score drops to 0 you will be sent to the 'citizen' camp.    |");
+    System.out.println("|      For every suitable candidate you approve you will be rewarded with         |");
+    System.out.println("|      credit. As a customs official you have the power to deny or approve        |");
+    System.out.println("|      entry to the USSS. Denying a good candidate will result in penalty aswell. |");
+    System.out.println("|      If you experience trouble identifying bad candidates refer to the          |");
+    System.out.println("|      approval guidelines.                                                       |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|      Squidsvedania comrade,                                                     |");
+    System.out.println("|      Premier Freitag of the USSS                                                |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|_________________________________________________________________________________|");
+  }
+  
+   public static void displayNotice(){
+    System.out.println("___________________________________________________________________________________");
+    System.out.println("|                                                                                 |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|                        ***    RE-EDUCATION NOTICE   ***                         |");
+    System.out.println("|                        --------------------------------                         |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|      Notice Brief:                                                              |");
+    System.out.println("|      You have been found guilty of allowing entrance to many foreign enemies.   |");
+    System.out.println("|      You were given multiple opportunities to correct your own actions.         |");
+    System.out.println("|      It is by the supreme command of Premier Freitag that you shall be sent     |");
+    System.out.println("|      to work in the re-education camp until further notice. Until the faith     |");
+    System.out.println("|      of the motherland is restored, you will rebuild the bridges of trust       |");
+    System.out.println("|      that you have so violently burned down through your own incompetence.      |");
+    System.out.println("|      For your sake I wish you a quick re-education cycle.                       |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|      Squidsvedania comrade,                                                     |");
+    System.out.println("|      Commisar Iosef Freitagenberg of the USSS                                   |");
+    System.out.println("|                                                                                 |");
+    System.out.println("|_________________________________________________________________________________|");
+  }
+  
+  public static void desk(){
+    System.out.println("");
+    System.out.println("__________________________________________________________________________________");
+    System.out.println("|_|                    ___________________________________                     |_|");
+    System.out.println("|                     ||OFFICIAL OFFICE OF USSS CUSTOMS||\\                       |");
+    System.out.println("|                      |_______________________________|\\\\\\                      |");
+    System.out.println("|                                                                                |");
+    System.out.println("|     ______________              _______________               _____________    |");
+    System.out.println("|     |Stat:  (0)  |              |Approve: (1) |               |Guide: (4) |    |");
+    System.out.println("|     |^^^^^^^^^^  |              |Deny:    (2) |               |Quit:  (5) |    |");
+    System.out.println("|     |^^^^^^^^^^  |              |Bribe:   (3) |               |^^^^^^^^^^^|    |");
+    System.out.println("|     |^^^^^^^^^^  |              |^^^^^^^^^^^  |               |^^^^^^^^^^^|    |");
+    System.out.println("|     |^^^^^^^^^^  |              |^^^^^^^^^^^  |               |^^^^^^^^^^^|    |");
+    System.out.println("|     |____________|              |_____________|               |___________|    |");
+    System.out.println("|________________________________________________________________________________|");
+    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+    System.out.println("|||||||                              (oooo)                                |||||||");
+    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+    System.out.println("||||//                                                                      \\\\||||");
+    System.out.println("|||||                                                                        |||||");
+    System.out.println("|||||                                                                        |||||");
+    System.out.println("|||||                                                                        |||||");
+    System.out.println("");
+  }
+  
+  public static void guidelines(){
+    System.out.println("");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("|                                                                               |");
+    System.out.println("|                                                                               |");
+    System.out.println("|                   OFFICIAL CUSTOMS GUIDELINES OF THE USSS                     |");
+    System.out.println("|                   ---------------------------------------                     |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Official Criteria:                                                        |");
+    System.out.println("|                                                                               |");
+    System.out.println("|        o Intent (It is what the reason the candidate has for being here)      |");
+    System.out.println("|                                                                               |");
+    System.out.println("|        o COO    (Country of origin, prohibited or approved)                   |");
+    System.out.println("|                                                                               |");
+    System.out.println("|        o Seal   (It is a official government seal of approval)                |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Prohibited Intent:                                                        |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Intentions of our candidates is very important, anything that is...       |");
+    System.out.println("|     explicitly traitorous must be expelled from the country with prejudice!   |");
+    System.out.println("|     anything suspicious is subject to further investigation. We are looking   |");
+    System.out.println("|     for patriots so outright approval is appreciated.                         |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Prohibited COO:                                                           |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Any COO listed have persons that are stricly prohibited!!                 |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     PCOO: Yugoslavia, Uzbekistan, DPRK                                        |");
+    System.out.println("|     Non-Preferred: China, India, Russia                                       |");
+    System.out.println("|     Preferred: Iran, Kenya, Italy                                             |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Official Seals: (Unnaproved Seals result in immediate dismissal)          |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Seals:   OII, IVO, PPZ, IJN, USS, HMS, KMS, RMS, DDR                      |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Further Briefing:                                                         |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     All of these criteria are worth points. There is a certain threshold      |");
+    System.out.println("|     that is deemed unacceptable. Approving those unsuitable's will result     |");
+    System.out.println("|     in loss of credit.                                                        |");
+    System.out.println("|     You earn money for every good candidate, what you do with that money is   |");
+    System.out.println("|     not of my concern. If you bribe you can get credit at the chance of       |");
+    System.out.println("|     degrading your credit.                                                    |");
+    System.out.println("|                                                                               |");
+    System.out.println("|     Good Luck and GLORY TO SQUIDLANDIA!!!                                     |");
+    System.out.println("|_______________________________________________________________________________|");
+  }
+  public static void yesStamp(){
+    System.out.println("");
+    System.out.println("        ___        ");
+    System.out.println("       (   )       ");
+    System.out.println(" ______ ) ( ______ ");
+    System.out.println("/_____APPROVED____\\");
+    System.out.println("|_________________||");
+    System.out.println("<><>><><><><>><><><>");
+  }
+  
+  public static void noStamp(){
+    System.out.println("");
+    System.out.println("        ___        ");
+    System.out.println("       (   )       ");
+    System.out.println(" ______ ) ( ______ ");
+    System.out.println("/______DENIED_____\\");
+    System.out.println("|_________________||");
+    System.out.println("<><>><><><><>><><><>");
+  }
+  
+  public static void face1(){
+    System.out.println("");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("/////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("         _______________");
+    System.out.println("       ||||||||||||||||||    ");
+    System.out.println("    ||||||||||       ||||||||");
+    System.out.println("  |||||||||  ||      |||||||||");
+    System.out.println(" ||||         |       |||||||||");
+    System.out.println(" ||||                     |||||");
+    System.out.println(" |||    ____         _____   ||");
+    System.out.println("  |    //////       //////    |");
+    System.out.println("   |   (_( ))  /\\  (_( ))    |");
+    System.out.println("   |          |  ||          |");
+    System.out.println("   |         ( ^   )         /");
+    System.out.println("    |          | |           |");
+    System.out.println("     |      //////////      / ");
+    System.out.println("      \\      ////         /|");
+    System.out.println("        \\               /  |");
+    System.out.println("           \\_( | )____/    | ");
+    System.out.println("          |__________________ ");
+    System.out.println("   /////////////////////////////////");
+    System.out.println("//////////////////////////////////////////");
+    
+  }
+  
+   public static void face5(){
+    System.out.println("");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("/////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("         _______________");
+    System.out.println("       ||||||||||||||||||    ");
+    System.out.println("    ||||||||||||||||||||||||||");
+    System.out.println("  |||||||||||||||||||||||||||||");
+    System.out.println(" ||||||||||||||||||||||||||||||");
+    System.out.println(" ||||                     |||||");
+    System.out.println(" |||    ____         _____   ||");
+    System.out.println("  |    //////       //////    |");
+    System.out.println("   |   (_( ))  /\\  (_( ))    |");
+    System.out.println("   |          |  ||          |");
+    System.out.println("   |||||     ( ^   )    |||||/");
+    System.out.println("    ||||||||||||||||||||||||||");
+    System.out.println("     |||||||||||||||||||||||/ ");
+    System.out.println("      \\||||||////|||||||||/|");
+    System.out.println("        \\    |||||     /  |");
+    System.out.println("           \\_( | )____/    | ");
+    System.out.println("          |__________________ ");
+    System.out.println("   /////////////////////////////////");
+    System.out.println("//////////////////////////////////////////");
+    
+  }
+  
+  public static void face2(){
+    System.out.println("");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("/////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("         _______________");
+    System.out.println("       ||||||||||||||||||\\   ");
+    System.out.println("    ||||||||||||| \\||||||||");
+    System.out.println("  |||||||||  ||||    |||||||||");
+    System.out.println(" ||||///      ||     |||||||||");
+    System.out.println(" ||||/                    |||||");
+    System.out.println(" |||/   ____         _____   ||");
+    System.out.println("  || \\------      -------//   |");
+    System.out.println("   | \\(_( ))  /\\  (_( ))//  |__");
+    System.out.println("   |        |  ||          |   )");
+    System.out.println("   |       (^   )         /|  )");
+    System.out.println("    |        | |          |||/");
+    System.out.println("   |||        /////       / ");
+    System.out.println("  |||| \\      \\\\//     /||||");
+    System.out.println("  ||||||\\           __/ |||||||");
+    System.out.println(" ||||||||| \\_______/   ||||||||||| ");
+    System.out.println("||||||||||______________||||||||||||");
+    System.out.println("   (////////////     //////////////)");
+    System.out.println("(////////////////   ////////////////////)");
+    System.out.println("(////////////////////////////////////////)");
+  }
+  
+  public static void face3(){
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("/////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("     ___________________________________      ");
+    System.out.println("     |                                 |      ");
+    System.out.println("     |                                 |      ");
+    System.out.println("     |   ___________________________   |      ");
+    System.out.println("     |___|                         |___|      ");
+    System.out.println("     |      ______        ______       |      ");
+    System.out.println("     |     |___|__|______|__|___|      |      ");
+    System.out.println("     |           _|______|__           |      ");
+    System.out.println("     |          |  |     |  |          |      ");
+    System.out.println("     |          |  |_____|  |          |      ");
+    System.out.println("     |          |___________|          |      ");
+    System.out.println("     |_________________________________|      ");
+    
+  }
+  
+  public static void face4(){
+    System.out.println("");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("/////////////////////////////////////////////////////////////////////////////////");
+    System.out.println("_________________________________________________________________________________");
+    System.out.println("                       /\\");
+    System.out.println("                      /  \\ ");
+    System.out.println("                     /    \\                        ");
+    System.out.println("                    /      \\                      ");
+    System.out.println("                   /        \\                    ");
+    System.out.println("                  /   /\\     \\                  ");
+    System.out.println("                 /___/   \\____\\                 ");
+    System.out.println("                  |  _   _  |                  ");
+    System.out.println("        /|        | | | | | |          |\\     ");
+    System.out.println("       | |        | |_| |_| |          |  |    ");
+    System.out.println("       | |        |    ^    |0         |  |    ");
+    System.out.println("        ||        |         |          | |     ");
+    System.out.println("         \\       /          \\ \\      | |     ");
+    System.out.println("           \\____/  /|  | | | \\ \\____/ /      ");
+    System.out.println("            \\____/  | | ^ | |  \\______/       ");
+    System.out.println("                    /  /  \\ \\               ");
+    System.out.println("                   /_/     \\_\\              ");
+    System.out.println("");
+  }
+  
+  public static void gulag(){
+    System.out.println("");
+    System.out.println("_____________________________________________________________________________________________");
+    System.out.println("|___        |           |      ____   |             |             |_____       |            |");
+    System.out.println("|___________________________________________________________________________________________|");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |___________________________________________________________________________|   |    ");
+    System.out.println("    |   |                                                                           |   |    ");
+    System.out.println("    |   |            GULAG OF THE UNION OF SOVIET SQUIDLANDIAN STATES               |   |    ");
+    System.out.println("    |   |                                YOU LOSE!!!!                               |   |    ");
+    System.out.println("    |   |___________________________________________________________________________|   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    ");
+    System.out.println("____|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|____");
+    System.out.println("|___        |   |_      |      ____   |             |             |_____       |            |");
+    System.out.println("|____________________________________________|______________________________________________|");
+  }
+  
+}

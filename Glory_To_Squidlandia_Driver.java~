@@ -1,0 +1,250 @@
+
+/* Nuclear Nadal
+ * David A. Freitag
+ * OOP Game "Glory to Squidlandia"
+ */
+
+import java.util.List; 
+import java.util.ArrayList;
+
+public class Glory_To_Squidlandia_Driver
+{
+    //------------------------------------------ CONSTANTS -------------------------------------------------------------
+  final static int CREDIT_D = 100;
+  final static int DV = 0;
+  public static String[] cooArray = {"Yugoslavia","Uzbekistan","DPRK","China","India","Russia","Iran","Kenya","Italy"};
+  //                                      0             1         2      3       4        5       6      7       8
+  public static String[] intentArray = {"Bring The Downfall of Squidlandia", "Inspect the agriculture", "Play golf in the military bases", "See long lost relative", "Purchase a pet squid", "Take promo photos for travel","Defect to Squidlandia","Attend Squindlandian university", "Become a citizen of Squidlandia" };
+  //                                                  0                                   1                           2                                3                        4                          5
+  public static String[] sealArray = {"OII","IVO","PPZ","IJN","USS","HMS","KMS","RMS","DDR"};
+  //                                                                                       | Past this point Fake
+  public static String[] nameArray = {"Jimathew Tyrek", "Squando Dungus", "Nacho Man Randy Graman", "Santa Clause", "Squido Squado", "Dio","Jotaro","Prince Charming", "Roller", "Alex","Kelsey","Logan","Chris","Joey Healey-Stewart","Sushi Cox","Zach Miller", "Evan Tucker"};
+  
+  public static String[] approveFail = {"Be careful you just let in SPY!!!","Did you even look at visa! This person is undesireable.","Don't make that mistake again!","I am reporting your mistake to the ministry!","Premier Freitag will not be happy."};
+  
+  public static String[] denyFail = {"People are capital, you must not forget this.","That candidate was suitable!!!","That candidate had much potential.","We appreciate those who want to join our ranks!","Your incompetence will not go unpunished!"};
+    //------------------------------------------ MAIN ------------------------------------------------------------------
+    public static void main(String[] args)
+    {
+      GTS_ASCII.displayTitle();
+      int start = startGame();
+      while(isGameRun(start)){
+        runGame(start);
+        start = startGame();
+      }
+    }
+    
+    //------------------------------------------ FUCTIONS --------------------------------------------------------------
+    public static int startGame(){
+      System.out.println("");
+      int newValue = IR4.getInteger("Enter 1 to serve the motherland 0 to abandon her.");
+      while(newValue<0 || newValue>1){
+        newValue = IR4.getInteger("Enter 1 to serve the motherland 0 to abandon her.");
+      }
+      System.out.println("");
+      return newValue;
+    }
+    public static int enableCheat(){
+      System.out.println("");
+      int newValue = IR4.getInteger("Enter 1 to enable cheats or 0 to continue without.");
+      while(newValue<0 || newValue>1){
+        newValue = IR4.getInteger("Enter 1 to enable cheats or 0 to continue without.");
+      }
+      System.out.println("");
+      return newValue;
+    }
+    
+    public static Boolean isCheat (int cheat){
+      if(cheat == 1){
+        return true;
+      }
+      if(cheat !=1){
+        return false;
+      }
+      return false;
+    }
+    
+    public static Boolean isGameRun (int start){
+      if(start == 1){
+        System.out.println("You have chosen correctly! Let us see what the motherland has in store for you!!!\n");
+        return true;
+      }
+      if(start !=1){
+        System.out.println("I hear the Gulag not so bad this time of year. Squidsvedania Traitor!\n");
+        return false;
+      }
+      return false;
+    }
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+    public static int runGame(int start){
+        int credit = CREDIT_D;
+        int money  = DV;
+        String name = IR4.getString("What is your designation comrade?***");
+        GTS_ASCII.yesStamp();
+        GTS_ASCII.displayIntro();
+        int cheat = enableCheat();
+        
+        do{
+          GTS_Player_Stat playerStat = new GTS_Player_Stat(credit,money,name);
+          
+          int sealI = IR4.getRandomNumber(0,sealArray.length-1);
+          int intentI = IR4.getRandomNumber(0,intentArray.length-1);
+          int cooI = IR4.getRandomNumber(0,cooArray.length-1);
+    
+          String seal = sealArray[sealI];
+          String intent = intentArray[intentI];
+          String coo = cooArray[cooI];
+          String nameP = nameArray[IR4.getRandomNumber(0,nameArray.length-1)];
+          
+          
+          GTS_Candidate candidate = new GTS_Candidate(intent,coo,seal,nameP);
+          int cScore = candidateScore(sealI,intentI,cooI);
+          
+          int face = IR4.getRandomNumber(1,4);
+          displayFace(face);
+          if(isCheat(cheat)){
+          System.err.println("-------------------CSCORE "+ cScore+"---------------------");//------------------------Cheat
+          }
+          System.out.println(candidate.toString());
+          GTS_ASCII.desk();
+          int choice = getChoice();
+          do{
+            if(choice==0){
+              System.out.print(playerStat.toString());
+              choice = getChoice();
+            }
+            if(choice==1){
+              GTS_ASCII.yesStamp();
+              choice =1;
+            }
+            if(choice==2){
+              GTS_ASCII.noStamp();
+              choice =2;
+            }
+            if(choice == 3){
+              choice = getChoice();
+            }
+            if(choice==4){
+              GTS_ASCII.guidelines();
+              System.out.println(candidate.toString());
+              GTS_ASCII.desk();
+              choice = getChoice();
+            }
+            if(choice==5){
+              quitGame();
+              System.out.println(candidate.toString());
+              GTS_ASCII.desk();
+              choice = getChoice();
+            }
+            
+          }while(isApprove(choice));
+          if(choice == 1){
+          if (cScore<10){
+            playerStat.setCreditScore(playerStat.getCreditScore()-25);
+            System.err.println(approveFail[IR4.getRandomNumber(0,4)]);
+          }
+          if(cScore>9){
+            playerStat.setMoney(playerStat.getMoney()+10);
+            if(playerStat.getCreditScore()<=75){
+              playerStat.setCreditScore(playerStat.getCreditScore()+25);
+            }
+          }
+          }
+          
+          if(choice == 2){
+          if (cScore>9){
+            playerStat.setCreditScore(playerStat.getCreditScore()-25);
+            System.err.println(denyFail[IR4.getRandomNumber(0,4)]);
+          }
+          }
+          money = playerStat.getMoney();
+          credit = playerStat.getCreditScore();
+        }while(stillAlive(credit));
+        GTS_ASCII.displayNotice();
+        System.out.println("");
+        GTS_ASCII.gulag();
+      
+        return start;
+    }
+    
+    public static Boolean stillAlive(int credit){
+      if(credit<=0){
+        return false;
+      }
+      return true;
+    }
+    public static int getChoice(){
+      int newValue = IR4.getInteger("What do you want to do?");
+      while(newValue<0 || newValue>5){
+        newValue = IR4.getInteger("What do you want to do?");
+      }
+      return newValue;
+    }
+    public static void quitGame(){
+      int choice = IR4.getInteger("Do you want to quit 1 for yes 0 for no");
+      while(choice<0 || choice>1){
+        choice = IR4.getInteger("Do you want to quit 1 for yes 0 for no");
+      }
+      if(choice == 1){
+        System.out.println("QUITTING GAME");
+        GTS_ASCII.gulag();
+        System.exit(-1);
+      }
+    }
+    public static Boolean isApprove(int choice){
+      if(choice == 1){
+        return false;
+      }
+      if(choice == 2){
+        return false;
+      }
+      return true;
+    }
+    public static void displayFace(int face){
+      if (face == 1){
+        GTS_ASCII.face1();
+      }
+      if(face == 2){
+        GTS_ASCII.face2();
+      }
+      if(face == 3){
+        GTS_ASCII.face3();
+      }
+      if(face == 4){
+        GTS_ASCII.face4();
+      }
+    }
+    
+    public static int candidateScore(int sealI, int intentI, int cooI){
+      if(sealI>8){
+        sealI = 0;
+      }
+      if(sealI<9){
+        sealI = 5;
+      }
+      if(cooI<4){
+        cooI = -5;
+      }
+      if(cooI>3 && cooI<7){
+        cooI = 3;
+      }
+      if(cooI>6){
+        cooI = 5;
+      }
+      if(intentI<3){
+        intentI = -5;
+      }
+      if(intentI>2&&intentI<4){
+        intentI = 3;
+      }
+      if (intentI>=3){
+        intentI = 5;
+      }
+      
+      int score = cooI + intentI + sealI;
+      
+      return score;
+    }
+
+}
