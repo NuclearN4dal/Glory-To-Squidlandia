@@ -1,6 +1,5 @@
 
-/* Musashi Cox
- * David A. Freitag
+/*
  * OOP Game "Glory to Squidlandia"
  */
 
